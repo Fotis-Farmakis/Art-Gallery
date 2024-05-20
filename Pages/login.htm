@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../Styles/style_login.css">
+
+    <title>Art gallery - Login </title>
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>upARTas gallery</h1>
+        <button id="headerBut1">Visit</button>
+        <button id="headerBut2">Art</button>
+        <button id="headerBut3">Exhibitons</button>
+        <button id="headerBut4">Login</button>
+    </header>
+    <div class="main">
+        <h1> Become a member of upARTas gallery!</h1>
+    </div>
+    <div class="Forms">
+
+    <div class="Form">
+        <form action="/signup" method="post">
+            <h2>New here? Sign Up!</h2>
+            <div class="Name">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+        
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="Email">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="User">
+                <label for="User">Username</label>
+                <input type="text" id="User" name="User" required>
+            </div>
+            <div class="Pass">
+                <label for="passSU">Password</label>
+                <input type="password" id="passSU" name="passSU" required>
+            
+                <label for="confPassword">Confirm Password</label>
+                <input type="password" id="confPassword" name="confPassword" required>
+            </div>
+            <div class="formBut">
+            <button type="submit">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="Form">
+        <form action="/login" method="post" >
+            <h2>Already have an account? Login!</h2>
+            <div class="userLogin">
+                <label for="username">Username</label>
+                <input type="text" id="userLogin" name="userLogin" required>
+            </div>
+            <div class="passLogin">
+                <label for="password">Password</label>
+                <input type="password" id="passLogin" name="passLogin" required>
+            </div>
+            <div class="formBut">
+            <button type="submit">Login</button>
+            </div>
+        </form>
+        </div>
+</div>
+
+
+    <footer class="footer">
+        <div class="footerDiv">University of Patras</div>
+        <div class="footerDiv"> 2024-2024</div>
+    </footer>
+
+    <script>
+        document.getElementById('headerBut1').addEventListener('click',() => {window.location.href='visit.htm'});
+
+        document.querySelector('.header h1').addEventListener('click',() => {window.location.href='home.htm'});
+
+        document.getElementById('headerBut2').addEventListener('click',() => {window.location.href='art.htm'});
+
+        document.getElementById('headerBut4').addEventListener('click',() => {window.location.href='login.htm'});
+
+
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../Styles/style_home.css">
+    <script src="../Scripts/script_home.mjs" defer> </script>
+    <title>Art gallery version 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>upARTas gallery</h1>
+        <button id="headerBut1">Visit</button>
+        <button id="headerBut2">Art</button>
+        <button id="headerBut3">Exhibitons</button>
+        <button id="headerBut4">Login</button>
+    </header>
+    
+    <div class="main">
+        <h1> Welcome to upARTas gallery!</h1>
+        <button class="mainBtn">Plan a visit</button>
+    </div>
+    <hr>
+    <div class="exhibitions">
+        <h1>View the gallery's current exhibitions:</h1>
+
+
+        <div class="ex"></div>
+
+
+    </div>
+    <hr>
+    <div class="membership">
+        <h1>Live art history! Become a member!</h1>
+
+        <div class="memberButton">
+            <button class="memBtn">View the benefits</button>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footerDiv">University of Patras</div>
+        <div class="footerDiv"> 2024-2024</div>
+    </footer>
+    
+    <script>
+        document.getElementsByClassName('mainBtn')[0].addEventListener('click',() => {window.location.href='visit.htm'});
+        document.getElementsByClassName('memberButton')[0].addEventListener('click',() => {window.location.href='login.htm'});
+
+    </script>
+
+</body>
+
+
+</html>

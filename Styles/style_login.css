@@ -1,0 +1,146 @@
+body {
+    font-size: 15px;
+    margin: 0px;
+    object-fit:fill;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+hr {
+    border: 0.25em solid black;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 0.75vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: red;
+    height: 7.5em;
+    border-radius: 2em;
+
+}
+
+.header h1 {
+    margin: 0.5em;
+    width: 20%;
+    text-align: center;
+    vertical-align: center;
+    line-height: 3em;
+  
+}
+
+.header button {
+    color: white;
+    background-color: transparent;
+    width: 20%;
+    border-bottom-left-radius: 0.5em;
+    border: transparent;
+    border-left: 0.1em solid white;
+    font-size: 3em;
+
+}
+
+.header button:hover{
+    color: black;
+    border-color: black;
+}
+
+
+.main {
+    text-align: center;
+    height: 30%;
+    margin: 0;
+    padding: 3em;
+    font-size: 2vw;
+}
+
+.Forms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+@media (min-width: 750px){
+
+    .Form {
+        width:50%;
+        margin: 0.5rem;
+        border-radius: 8px;
+        border: 1.5px solid grey;
+    }
+
+    
+} 
+
+
+@media (max-width: 749px){
+    .Forms{
+        display: block;
+    }
+
+    .Form {
+        
+        margin: 0.5rem;
+        border-radius: 8px;
+        border: 1.5px solid grey;
+    }
+
+    
+} 
+
+
+
+.Form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Form div {
+    margin-bottom: 15px;
+}
+
+.Form div label {
+    display: block;
+    margin:  0.5rem;
+}
+
+.Form div input {
+    width: 80%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Form button {
+    width: 80%;
+    margin: 10px;
+    background-color: rgb(11, 189, 11);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Form button:hover {
+    background-color: #0d8426;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1vw;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: red;
+    height: 7.5em;
+    border-radius: 2em;
+}
+
+.footerDiv{
+   margin: auto;
+}
